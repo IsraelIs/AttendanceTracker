@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<title>Teacher Sign In</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body id="myPage">
+
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <ul class="w3-navbar w3-theme-d2 w3-left-align w3-large">
+  <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+    <a class="w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  </li>
+  <li><a href="index.html" class="w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+  <li class="w3-hide-small"><a href="students.html" class="w3-hover-white">Students</a></li>
+  <li class="w3-hide-small"><a href="teachers.html" class="w3-hover-white">Teachers</a></li>
+  <li class="w3-hide-small"><a href="Test1.html" class="w3-hover-white">About</a></li>
+  
+  </li>
+  <li class="w3-hide-small w3-right"><a href="#" class="w3-hover-teal" title="Search"><i class="fa fa-search"></i></a></li>
+ </ul>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:43px;">
+  <ul class="w3-navbar w3-left-align w3-large w3-theme">
+    <li><a href="students.html">Students</a></li>
+    <li><a href="teachers.html">Teachers</a></li>
+    <li><a href="Test1.html">About</a></li>
+  </li>
+  </ul>
+</div>
+
+<div class="w3-container w3-padding-64 w3-theme-l5">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Teachers:</span></div>
+      <h3>Teacher Sign in:</h3>
+      
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white">
+      <div class="w3-group">
+        <label class="w3-label">Name</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Username</label>
+        <input class="w3-input" type="text">
+      </div>
+      <div class="w3-group">
+        <label class="w3-label">Password</label>
+        <input class="w3-input" type="text">
+      </div>
+      <button type="button" class="w3-btn w3-right w3-theme">Sign in</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-btn-floating w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-btn-floating w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p></p>
+
+  <div style="position:relative;bottom:75px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>
+    <a class="w3-btn w3-theme" href="teachers.html"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<!-- Script For Side Navigation -->
+<script>
+function w3_open() {
+    var x = document.getElementById("mySidenav");
+    x.style.width = "300px";
+    x.style.textAlign = "center";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
